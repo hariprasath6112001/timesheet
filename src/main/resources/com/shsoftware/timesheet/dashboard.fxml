@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<!--<?import java.util.ArrayList?>-->
+
+<GridPane fx:id="dashboardScene" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="600.0" minWidth="1000.0" prefHeight="600.0" prefWidth="1000.0" styleClass="Dashboard" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.shsoftware.timesheet.DashboardController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="525.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="400.0" minWidth="400.0" prefWidth="400.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="80.0" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="1.7976931348623157E308" minHeight="300.0" prefHeight="300.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <GridPane fx:id="month" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.rowIndex="2">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="Day" text="Monday">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="Day" text="Tuesday" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="Day" text="Wednesday" GridPane.columnIndex="2">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="Day" text="Thursday" GridPane.columnIndex="3">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="Day" text="Friday" GridPane.columnIndex="4">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="Day" text="Saturday" GridPane.columnIndex="5">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="Day" text="Sunday" GridPane.columnIndex="6">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Hyperlink fx:id="r0c0" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onDateClicked" styleClass="Date" text="Label" GridPane.rowIndex="1">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </GridPane.margin>
+            </Hyperlink>
+            <Hyperlink fx:id="r0c1" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onDateClicked" styleClass="Date" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </GridPane.margin>
+            </Hyperlink>
+            <Hyperlink fx:id="r0c2" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onDateClicked" styleClass="Date" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </GridPane.margin>
+            </Hyperlink>
+            <Hyperlink fx:id="r0c3" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onDateClicked" styleClass="Date" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </GridPane.margin>
+            </Hyperlink>
+            <Hyperlink fx:id="r0c4" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onDateClicked" styleClass="Date" text="Label" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </GridPane.margin>
+            </Hyperlink>
+            <Hyperlink fx:id="r0c5" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onDateClicked" styleClass="Date" text="Label" GridPane.columnIndex="5" GridPane.rowIndex="1">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </GridPane.margin>
+            </Hyperlink>
+            <Hyperlink fx:id="r0c6" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onDateClicked" styleClass="Date" text="Label" GridPane.columnIndex="6" GridPane.rowIndex="1">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </GridPane.margin>
+            </Hyperlink>
+            <Hyperlink fx:id="r1c0" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onDateClicked" styleClass="Date" text="Label" GridPane.rowIndex="2">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </GridPane.margin>
+            </Hyperlink>
+            <Hyperlink fx:id="r1c1" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onDateClicked" styleClass="Date" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </GridPane.margin>
+            </Hyperlink>
+            <Hyperlink fx:id="r1c2" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onDateClicked" styleClass="Date" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </GridPane.margin>
+            </Hyperlink>
+            <Hyperlink fx:id="r1c3" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onDateClicked" styleClass="Date" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </GridPane.margin>
+            </Hyperlink>
+            <Hyperlink fx:id="r1c4" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onDateClicked" styleClass="Date" text="Label" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </GridPane.margin>
+            </Hyperlink>
+            <Hyperlink fx:id="r2c0" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onDateClicked" styleClass="Date" text="Label" GridPane.rowIndex="3">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </GridPane.margin>
+            </Hyperlink>
+            <Hyperlink fx:id="r2c1" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onDateClicked" styleClass="Date" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </GridPane.margin>
+            </Hyperlink>
+            <Hyperlink fx:id="r2c2" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onDateClicked" styleClass="Date" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </GridPane.margin>
+            </Hyperlink>
+            <Hyperlink fx:id="r2c3" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onDateClicked" styleClass="Date" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </GridPane.margin>
+            </Hyperlink>
+            <Hyperlink fx:id="r2c4" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onDateClicked" styleClass="Date" text="Label" GridPane.columnIndex="4" GridPane.rowIndex="3">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </GridPane.margin>
+            </Hyperlink>
+            <Hyperlink fx:id="r3c0" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onDateClicked" styleClass="Date" text="Label" GridPane.rowIndex="4">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </GridPane.margin>
+            </Hyperlink>
+            <Hyperlink fx:id="r3c1" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onDateClicked" styleClass="Date" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </GridPane.margin>
+            </Hyperlink>
+            <Hyperlink fx:id="r3c2" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onDateClicked" styleClass="Date" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </GridPane.margin>
+            </Hyperlink>
+            <Hyperlink fx:id="r3c3" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onDateClicked" styleClass="Date" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </GridPane.margin>
+            </Hyperlink>
+            <Hyperlink fx:id="r3c4" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onDateClicked" styleClass="Date" text="Label" GridPane.columnIndex="4" GridPane.rowIndex="4">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </GridPane.margin>
+            </Hyperlink>
+            <Hyperlink fx:id="r1c5" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onDateClicked" styleClass="Date" text="Label" GridPane.columnIndex="5" GridPane.rowIndex="2">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </GridPane.margin>
+            </Hyperlink>
+            <Hyperlink fx:id="r2c5" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onDateClicked" styleClass="Date" text="Label" GridPane.columnIndex="5" GridPane.rowIndex="3">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </GridPane.margin>
+            </Hyperlink>
+            <Hyperlink fx:id="r3c5" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onDateClicked" styleClass="Date" text="Label" GridPane.columnIndex="5" GridPane.rowIndex="4">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </GridPane.margin>
+            </Hyperlink>
+            <Hyperlink fx:id="r1c6" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onDateClicked" styleClass="Date" text="Label" GridPane.columnIndex="6" GridPane.rowIndex="2">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </GridPane.margin>
+            </Hyperlink>
+            <Hyperlink fx:id="r2c6" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onDateClicked" styleClass="Date" text="Label" GridPane.columnIndex="6" GridPane.rowIndex="3">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </GridPane.margin>
+            </Hyperlink>
+            <Hyperlink fx:id="r3c6" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onDateClicked" styleClass="Date" text="Label" GridPane.columnIndex="6" GridPane.rowIndex="4">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </GridPane.margin>
+            </Hyperlink>
+            <Hyperlink fx:id="r4c0" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onDateClicked" styleClass="Date" text="Label" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Hyperlink>
+            <Hyperlink fx:id="r4c1" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onDateClicked" styleClass="Date" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Hyperlink>
+            <Hyperlink fx:id="r4c2" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onDateClicked" styleClass="Date" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Hyperlink>
+            <Hyperlink fx:id="r4c3" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onDateClicked" styleClass="Date" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Hyperlink>
+            <Hyperlink fx:id="r4c4" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onDateClicked" styleClass="Date" text="Label" GridPane.columnIndex="4" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Hyperlink>
+            <Hyperlink fx:id="r4c5" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onDateClicked" styleClass="Date" text="Label" GridPane.columnIndex="5" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Hyperlink>
+            <Hyperlink fx:id="r4c6" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onDateClicked" styleClass="Date" text="Label" GridPane.columnIndex="6" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Hyperlink>
+            <Hyperlink fx:id="r5c0" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onDateClicked" styleClass="Date" text="Label" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Hyperlink>
+            <Hyperlink fx:id="r5c1" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onDateClicked" styleClass="Date" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Hyperlink>
+
+<!--             <fx:define>-->
+<!--                 <ArrayList fx:id="labelList">-->
+<!--                     <fx:reference source="$r0c0"/>-->
+<!--                     <fx:reference source="$r0c1"/>-->
+<!--                     <fx:reference source="$r0c2"/>-->
+<!--                     <fx:reference source="$r0c3"/>-->
+<!--                     <fx:reference source="$r0c4"/>-->
+<!--                     <fx:reference source="$r0c5"/>-->
+<!--                     <fx:reference source="$r0c6"/>-->
+<!--                     <fx:reference source="$r1c0"/>-->
+<!--                     <fx:reference source="$r1c1"/>-->
+<!--                     <fx:reference source="$r1c2"/>-->
+<!--                     <fx:reference source="$r1c3"/>-->
+<!--                     <fx:reference source="$r1c4"/>-->
+<!--                     <fx:reference source="$r1c5"/>-->
+<!--                     <fx:reference source="$r1c6"/>-->
+<!--                     <fx:reference source="$r2c0"/>-->
+<!--                     <fx:reference source="$r2c1"/>-->
+<!--                     <fx:reference source="$r2c2"/>-->
+<!--                     <fx:reference source="$r2c3"/>-->
+<!--                     <fx:reference source="$r2c4"/>-->
+<!--                     <fx:reference source="$r2c5"/>-->
+<!--                     <fx:reference source="$r2c6"/>-->
+<!--                     <fx:reference source="$r3c0"/>-->
+<!--                     <fx:reference source="$r3c1"/>-->
+<!--                     <fx:reference source="$r3c2"/>-->
+<!--                     <fx:reference source="$r3c3"/>-->
+<!--                     <fx:reference source="$r3c4"/>-->
+<!--                     <fx:reference source="$r3c5"/>-->
+<!--                     <fx:reference source="$r3c6"/>-->
+<!--                 </ArrayList>-->
+<!--             </fx:define>-->
+         </children>
+      </GridPane>
+      <GridPane GridPane.rowIndex="1">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="dateBox" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="Month" text="Date" />
+            <GridPane hgap="5.0" GridPane.columnIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onShowMonthClicked" styleClass="DateSelectBtns" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/sync.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onTodayClicked" styleClass="DateSelectBtns" text="Today" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <DatePicker fx:id="selectDate" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" />
+               </children>
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin>
+            </GridPane>
+         </children>
+      </GridPane>
+      <GridPane styleClass="TopBar">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="TimeSheet">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <Button alignment="BOTTOM_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onHomeClicked" styleClass="DashBtn" text="Home">
+                     <padding>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="BOTTOM_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onDashboardClicked" styleClass="DashBtn" text="Dashboard">
+                     <padding>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+      <GridPane styleClass="TopBar" GridPane.columnIndex="1">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <GridPane styleClass="ProfileBox">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="profileName" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Welcome, Name">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="designationId" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="(Desgn | Id)" GridPane.rowIndex="1" />
+               </children>
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </GridPane>
+            <GridPane hgap="10.0" GridPane.columnIndex="1">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onLogoutBtnClicked" styleClass="LogoutBtn" GridPane.columnIndex="1">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/logoutIcon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="profileBtn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onProfileBtnClicked" styleClass="LogoutBtn">
+                     <graphic>
+                        <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/userImg.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+      <GridPane fx:id="week" visible="false" GridPane.rowIndex="2">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="Day" text="Activity">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="Day" text="Monday" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="Day" text="Tuesday" GridPane.columnIndex="2">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="Day" text="Wedesday" GridPane.columnIndex="3">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="Day" text="Thursday" GridPane.columnIndex="4">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="Day" text="Friday" GridPane.columnIndex="5">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="Day" text="Saturday" GridPane.columnIndex="6">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="Day" text="Sunday" GridPane.columnIndex="7">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <GridPane GridPane.columnIndex="1" GridPane.rowIndex="2">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="jobBoxDate" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Date">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ScrollPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+               <content>
+                  <VBox fx:id="jobBoxText" alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="375.0" spacing="20.0">
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </GridPane>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#onNotificationBtnClicked" styleClass="LogoutBtn">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/notificationIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#assignBtnClicked" styleClass="LogoutBtn" text="Assign Job">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+      </HBox>
+   </children>
+</GridPane>

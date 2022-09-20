@@ -1,0 +1,98 @@
+*{
+    -fx-text-fill: black;
+}
+.root{
+    -fx-background-color: rgb(120, 180, 220);
+}
+.TextField{
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-background-color: rgb(255, 255, 255);
+    -fx-text-fill: rgb(0, 0, 0);
+    -fx-prompt-text-fill: "grey";
+}
+.DesgnBox{
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-background-color: rgb(255, 255, 255);
+    -fx-text-fill: rgb(0, 0, 0);
+}
+.Button{
+    -fx-background-color: rgb(30, 60, 150);
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-text-fill: rgb(255, 255, 255);
+}
+.Button:hover{
+    -fx-background-color: rgb(0, 0, 0);
+}
+.Dashboard{
+    -fx-background-color: rgb(255, 255, 255);
+}
+.TopBar{
+    -fx-background-color: rgb(120, 180, 220);
+}
+.ProfileBox{
+    -fx-border-color: rgb(0, 0, 0);
+    -fx-border-width: 3px;
+    -fx-border-style: solid;
+    -fx-border-radius: 5px;
+}
+.DashBtn{
+    -fx-border-width: 0;
+    -fx-background-color: transparent;
+    -fx-cursor: pointer;
+}
+.DashBtn:hover{
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+.DateSelectBtns{
+    -fx-border-width: 0;
+    -fx-background-color: rgb(120, 180, 220);
+    -fx-cursor: pointer;
+}
+.DateSelectBtns:hover{
+    -fx-background-color: rgb(80, 120, 240);
+    -fx-text-fill: white;
+}
+.Day{
+    -fx-background-color: rgb(80, 120, 220);
+}
+.Date{
+    -fx-border-color: rgb(0, 0, 0);
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    -fx-border-radius: 5px;
+    -fx-text-decoration: none;
+}
+.Date:hover{
+    -fx-border-color: rgb(255, 255, 255);
+    -fx-background-radius: 5px;
+    -fx-text-fill: rgb(255, 255, 255);
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    -fx-border-radius: 5px;
+    -fx-background-color: rgb(0, 0, 0);
+}
+.LogoutBtn{
+    -fx-background-color: transparent;
+}
+.LogoutBtn:hover{
+    -fx-background-color: rgb(80, 120, 240);
+}
+.Dialog{
+    -fx-border-width: 5px;
+    -fx-border-color: black;
+}
+.AnchorDialog:selected{
+    -fx-background-color: rgb(80, 120, 240);
+}
+.Anchor{
+    -fx-border-width: 5px;
+    -fx-border-color: black;
+}
+.AssignJob{
+    -fx-border-width: 2px;
+    -fx-border-color: black;
+}
