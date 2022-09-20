@@ -1,2 +1,76 @@
-# timesheet
-IT Companies Login Interface Application with Employee Management
+![Alt Text](https://lh3.googleusercontent.com/5_EXY8fIhzalIlcbwenF71MXr0GLMuDPA5wl-e6p6zWzIC7YORqTU22xl27dCgb-pXDK-ri1sdTYeJYjqb6M-XEhNWjgI5fcviapM2kcUxImq0L5G4hDOu1wyVzMXREyuiGOFaPzw6QXRNQ0cxpZwhe3GzFtvL4iaK337sPlGPSeYZBbcZA1MSRTWsuR5p5MgrP1_Nz91uB0RmaC87JET4ZSb8mQcmKmmbZZmQ325RpIjYRWH1eQ3wwon1850Jbz8aPuHPnNnycTGAgMWcqOQAr_dOndUEfUur5JCIaIGBq0tCETfJFwWA0NUupf_uxTAoipky3wfJ0fcCAd7_Mfw2pfxZHKuYzkv7AMgmMFp5PfqQDTejdEee4qcgyvlag8EvJHNxERKldl1yN00ezt4R9828SkRgG27b_VR8MwxsgiHGf1bsE-MYn7mTckWRfB8Qxt3c1oRd_HLFzhYe0hVqd_bkNn2hYhaCGcTJiew1RnppFLLS-MTAJJO0OKQNYxienPou3dROWOFGqt6mIOL5eBkkyU5aYojy_gVF-UV9ZLInNqb7q-93VkxIFA2EQEpHns2PZlCmnvWcb4kSE4b9fDEnNhLo93nM2szXhxfVWMglhJqAubkOnKcIy235afaOOJFMkUzoVwj49ku44CEsv0G2BsD1dSc2DSGuYUwTs1_x-mgodj2fk_3v1jYuARAijYLantiK0JS6AU82RE7QZ9LaMOWebD7RtIYLvwak2B9zLXmVRrSb6WDuzZb3mNrkJZZCWreoseBEiTdt59moAdjJ54IHrKIdbz--3mTX6FBoFTXTW2iddNdFRmn8QdkA=w1920-h702-no?authuser=1)
+# IT Companies Login Interface Application with Employee Management
+
+- Login Interface could be used in IT Companies.
+- It helps in managing Employee Attendance, Work Timings, Work Progress.
+- This app was developed using Java and JavaFx framework.
+
+## Features
+
+- Employee Database Management.
+- Time and Attendance Management.
+- Absence and Leave Management.
+- Employee task Scheduling.
+
+> The overriding design goal for Markdown's
+> formatting syntax is to make it as readable
+> as possible. The idea is that a
+> Markdown-formatted document should be
+> publishable as-is, as plain text, without
+> looking like it's been marked up with tags
+> or formatting instructions.
+
+## Tech
+
+Timesheet uses a number of open source libraries and frameworks to work properly:
+
+- [JavaFX] - Java enhanced for desktop apps!
+- [MySql] - Database
+- [JDBC] - MySql Driver to connect with Java Applications.
+
+And of course Timesheet itself is open source with a [public repository][timesheet] on GitHub.
+
+## Requirements
+
+- Java OpenJDK version 15 or Higher
+- Java IDE (Recommended [IntelliJ Idea](https://www.jetbrains.com/idea/download/?ij80pr#section=linux))
+- MySql Community Server ([Click here](https://dev.mysql.com/downloads/mysql/))
+- JDBC Driver ([Platform Independent Version](https://dev.mysql.com/downloads/connector/j/))
+
+## Run
+
+> Step 1: Cloning Timesheet Repository into local directory.
+
+```sh
+git clone https://github.com/joemccann/dillinger.git
+```
+
+> Step 2: Start IntelliJ Idea and Click 'Open' Button.
+
+![Alt Text][idea]
+
+> Step 3: Navigate to Cloned Directory and Select it.
+
+![Alt Text][idea_open]
+
+> Step 4: Run the Application using 'Run' Button on the Right Top of IDE
+
+![Alt Text][run]
+
+> Output
+
+![Alt Text][out]
+
+> Step 5: Use 'Admin' as User ID and 'Admin@123' as Password to access admin dashboard to create new Users(HR, TeamLeader, Employee).
+
+## License
+
+GNU General Public License v3.0
+
+**Free Software, Hell Yeah!**
+
+[timesheet]: <https://github.com/joemccann/dillinger>
+[idea]: <https://lh3.googleusercontent.com/S10kVkAKArt4BySqjWOoxVIkXIWyBP8a-dFJlBdwWlj-aGS8pI7H4OxPUPdQZ-X_2mCYZpudxnVESehTPbRcJcFTzdoOgE5UyBMnLaEooW9HL8AzAjfjoCIAhg8FJwrlxdUv14H3_oSMu73hlLxgqzZ7Ni8ZLrYbmmVDwlXSo_iALXvBRmfAQDu20VNEO_RX5RsXW_9eWWg4TYcSgz712MIN1ZRl8AvnuM-gRgAKCTWLcprQyWSND9ecDlkib4oWOVEINZmRXIFFxVqh5o53laWWhLFAZ4YMph_x8bKfl9MoV-bI24KCN-VenkgbIcZ5D2XewT74DRioX7JeYmFqwBfm2LjMfHtdfFjolXSJ8vbCY7Rau-JmTOXJaJzCUb8crHo6gxNzSJl_8Ikb-groKr_1uB0_PJ_dB1RBdONZlA4KkAIwBSthqJt6ORdV_m85t_iU9xU5DnjCHu9GxjkkkZXgaTOK3Sgvsnkgu8zxz0q6CRUbWP7YPIiZWOpLNvNXbaAGQJ5ATDhUn7zNctX-1q9CmIY9cECVFimSziiHNqgiAD8UvLbUSyJb4sdZ1OM6fsTtvZXNsI5ThejgsOBl4X-H5z9iM6csxCI3pQ_SSBsaN2SewWC6HW2aRmaPu7khX4ZRWB0xb82Akn0RCBUvg1n1P3-yqr9p7PIvKmoLKNub91ob3_x2u8Y05Gffvhekgwh08o4fUBkLvTbLkl4R1kgMX1EhCucXNcaV7iWUKPOjUoU2cpt3VmYxmeEGQKFHJGC6e8dWvKzaevP6wl6TnGfdAat-tJvxfI8pPj5TBT0uV-UGAB-ajx621_zxVu2UqmNi06TWA_Ml1-beAbdFGNTsGR6bBv0JrFrEYXg3m9ZOh5YgFoYtKEbzu2sZ2RnZl7CgYr8i1yNgbG91vAiuCZoj43sqGsvhgaTO4p9mXw4OWRfrAlHmLUaPif8BAZy9mfn86QJOwjn6DssjBCtjCGTZHltn3JQyOI4lrqSop5er=w820-h668-no?authuser=1>
+[idea_open]: <https://lh3.googleusercontent.com/RxB2oWdC7HZO1MylIdEYdDpFyRtz_Lo4K-4aS4woHcYtkrDrK77XbtDm76hlCbzxeiH9CBrst7M8ObNWHNBUsvBG7kDTJQGuHZej6Q4jzeOvBC4FBZO6ZEIcBSsarHJ0TFrR0j00I0qSGHHb4fSfM9n1c3LFqLTaNAFGufi8k2CDvCK7sSL6rehhpK1JhHT5KylOm4xl332X5UjPzQ9kq8GsqcFxLCi2MQFaGEBdP-M-J_lRIDuouXXqZTc6M9QMf1S70zAbCjSaR_DordOUqLkSspl444zYWsVF3VIyt0QyS0iIWLNUt7atw2nF6evlXF4T_zorR3aT-fVibSh8F9qN72gLHO6lCccqOaPWTvOKuFNlKtb7AB5M4iw0sjQ6_1KPFLNHBcXSdYdtWL4Dw3pJ0u4izFsPtvB3fy1-0lb5QxYUc_7QMF7bkmcbOZWUnjFjRrIh51v7pgaXQjETtiYILz6S4iH6sGx0hbYNws5aUiSrY8Nk_DL1LsHI0B70cZAKEcB2azsjRGbblEkyM0IP4DSwk07gG8yPY3YS8fOxdWwSTeZ6V_SccDiMF8eAcQZ7equMKfHIg1lTMUPJswpk1-n_EpTWxAPqr6KlE1bDogpVGsHaZegrnldrbGqY_hAkq2eouIZ0QyB6fFWsViXf6HbcpJlztg7W-1kuUknwZhW5D8zJCBKkYozEDnf6OG7c0m7Mpeoau-z-bw8lI1qv_x4SI8pT-pFHhj28f9I13T_whjjD8iafKHHWtq24A1ZiccbhVsFZa9qfmsGK_Yu9N4YDxQP1qw0oPooS_Xr1AQSyDn40SnS5H-SW6HwtOQ=w806-h655-no?authuser=1>
+[run]: <https://lh3.googleusercontent.com/_sg2Z7xjh8UveDqbAuBVfPVI7_A0uMC3B-zeCVZA09hhGe3rEErb6IUSZ0HaLkTtc2ro2rkKkf-FZzpuJBLRBFoVhISBM4A46SCvONQjT3xl6yYoaEg7-mVRiA4ekF1LKfVsye1XsaVWFODIhDxLiHGUcbwPWRuiVICYe7NO1KuG5LQb5C8k1W9O92p70FYjenaJhkTzYwiEkfkxNp7RjqIuIvCNHtsmoC3CIAPsWld8B3E6HiBYtK2hcXkho6unypt83Q50TjthADCy0BRU-O156QzUXq_4bGr1vw0HEHy6nO9i7jWIhAoyOxUo_riIDFRU70tpMch1v0RlR8Ptv-wZbwlm5dCn9F2jrQ-yvJoDBAbRVbpnXHVEzfEbzBXJHH8Om5Sfj7BNXXz6A1f2Y9NS5EaSsMT0w9Vf1xrCzAArE2s0cUESf0yyKWVFYfn4_huyRfTefHJXHreOw3r-zyldMehszJEFpgRauDHpRa4YOoPiUbllAu5H9NVPeI3dts7SJ7AHUjBFoeejvZoLr83bya31rgj3xyc9bjDNEEGQxkPSjZqcZG-0GKa5xZGy4xKarVwu1rceSatWobnWpgdUsDs90IrQg--BvK6qrgBUPJvc-l_5es7PzOjYtq1nQq6A_jI9zo8kWkql5Dph4T-kjNqWhQ-IARjNavVRhoRjaS8bpfKc-J-PBXAQkI8SUNQxPi4P8O18XCHtB4g2RtZ1suK09N-N-PSfOqpngsH7Hw1PoKiU-hWTy_KRJviZAWeiQOKsomkF1pzb8ixDNwdJpV4v-cES2zqC6MEeYIt_V0iHLZesnbs0YF43x4SY5bKJ1IYg9vrhPvxmN-gEvfDJn3c3Kl5MvC4044otA_oU85QThhr3A4kbGsAhSSiLANrS0dX7cM3pS3QeKWPYdefzxxfEFD7v1Iff_1BTGPZMHLnY7RAoCc9vmJHbqVw5rFJRWe3HIgoA1zB08Me0czlAEE7_TEqd_BI0bqndnmIq=w1764-h969-no?authuser=1>
+[out]: <https://lh3.googleusercontent.com/FxgCYoWUdqC8SFj4PwslhrAfEypg00KrAqMUihblfhDIbeBxOxC79lngH4_ytH5rHHFuthEngo5tUi5WA0tG1z4Gwmq_ZnTR34dRAtn0C9HsGQcfLv0-UaKAsJ-OxhojSMiNItX_16Z3j6KToRi_p8m9c59rgTZoVRQ0odlSuHU_3NN20QZ1KCs5lTZWWZtm-8xzJjfzTj3QeUQvxyZDVO6GSWx8tn5O4TytmHykPgCmBRMyZPk-drH9Py0PGq0j7l_MPhYHn-ky-lq7C1C89QB_sGM04XpI3jiXoFIswP9pG7yATAV2en47g9HlzPK6Py4byKqA1Vi93P4MKlVP2I-B1ybQMtHG_O6kKLFalNpOcS6gSI35748mhkK00FYdqH4NOKrCF__Kahj3p5KJkLvVxzn2xQRrteDir4B0h0WFMrQUgZWxadfxeX7L1pkbvenx1oAEqTbnyex9CtFOnyn2xKOSgBNA06Lz8hTsxW_COrYryNU0KChKWzFII4pTfthHEtJBRO5ER4jTmCDoMsFUHH7FEbpS3vsAQ_xCfT35pB7M8yJfx8mRALlo_L8tHOJtqOdAhWsFOBblHKgwhMltt1CUYJt8HNDlzNwd95kn9ZSpOJWPOHFy1bCX8pr8YSPwgbz3zUrkqpsXSYiOeavg-BNo3OChqyh6sGxd99eWMt5kGatLnZ3jYYcf_SSQrqLSLXrV_yxpl8vE6AA28m69waqpQSWP7zPKShmWtl2-xovEMlfHfgvNafjhWWfHerp3Zr8YFAFKOPa9pcJsEgrOBxEiHI8-Je0mVu-_aFYeYO0z9tySMCmGjIwogOyh1A=w1723-h969-no?authuser=1>
