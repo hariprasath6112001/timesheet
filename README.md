@@ -61,7 +61,7 @@ git clone https://github.com/hariprasath6112001/timesheet.git
 
 ![Alt Text][out]
 
-> Step 5: Use 'Admin' as User ID and 'Admin@123' as Password to access admin dashboard to create new Users(HR, TeamLeader, Employee).
+> Step 5: Use 'admin' as User ID and 'Admin@123' as Password to access admin dashboard to create new Users(HR, TeamLeader, Employee).
 
 ## License
 
