@@ -39,7 +39,7 @@ And of course Timesheet itself is open source with a [public repository][timeshe
 
 ## Run
 
-> Step 1: Cloning Timesheet Repository into local directory.
+> Step 1: Clone Timesheet Repository into local directory.
 
 ```sh
 git clone https://github.com/hariprasath6112001/timesheet.git
